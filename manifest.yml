@@ -1,12 +1,12 @@
 applications:
-- name: rusho-policy-service
+- name: diptesh-policy-service
   disk_quota: 1G
   instances: 1
   memory: 768M
   routes:
-  - route: rusho-policy-service.cfapps.io
+  - route: diptesh-policy-service.cfapps.io
   services:
-  - mongo-mlab
+  - Mongo
   stack: cflinuxfs2
   timeout: 60
   path: target\policy-management-service-0.1.0.jar
